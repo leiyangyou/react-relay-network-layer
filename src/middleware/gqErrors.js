@@ -71,7 +71,7 @@ function noticeAbsentStack() {
       schema: myGraphQLSchema,
       formatError: (error) => ({
         message: error.message,
-        stack: process.env.NODE_ENV === 'development' ? error.stack.split('\\n') : null,
+        stack: process.['env'].NODE_ENV === 'development' ? error.stack.split('\\n') : null,
       })
     });
 
